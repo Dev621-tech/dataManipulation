@@ -47,7 +47,10 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   // ---------------------------------------------------------------------
 
 // Check if all numbers are divisible by 5. Cache the result in a variable.
-const divBy5 = (n1 / 5 )
+const divBy5 = (n1 / 5) + (n2 / 5) + (n3 / 5) + (n4 / 5)
+console.log(divBy5)
+const allEven = divBy5 % 2
+console.log(allEven)
 
 // Check if the first number is larger than the last.Cache the result in a variable.
 const largerNum = (n1 > n4)
