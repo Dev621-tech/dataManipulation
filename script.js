@@ -44,23 +44,23 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
     !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) &&
     (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
-  // ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 
 // Check if all numbers are divisible by 5. Cache the result in a variable.
-const divBy5 = (n1 / 5) + (n2 / 5) + (n3 / 5) + (n4 / 5)
-console.log(divBy5)
-const allEven = divBy5 % 2
-console.log(allEven)
+const divBy5 = (n1 / 5) + (n2 / 5) + (n3 / 5) + (n4 / 5);
+console.log(divBy5);
+const allEven = divBy5 % 2;
+console.log(allEven);
 
 // Check if the first number is larger than the last.Cache the result in a variable.
-const largerNum = (n1 > n4)
-console.log(largerNum)
+const largerNum = (n1 > n4);
+console.log(largerNum);
 
 // Accomplish the following arithmetic chain:
 // Subtract the first number from the second number.
 
-const theResult = (n1 - n2)
-console.log(theResult)
+const theResult = (n1 - n2);
+console.log(theResult);
 
 // Multiply the result by the third number.
 
@@ -69,10 +69,51 @@ console.log(theAnswer)
 
 // Find the remainder of dividing the result by the fourth number.
 
-let theRemainder = (theAnswer / n4)
-console.log(theRemainder)
+let theRemainder = (theAnswer / n4);
+console.log(theRemainder);
 
 // Change the way that isOver25 calculates so that we do not need to use the NOT operator(!) in other logic comparisons.Rename the variable as appropriate.
 
 const isLess25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
-console.log(isLess25)
+console.log(isLess25);
+
+// Part One Done
+// Part Two Begins
+
+// You are planning a cross-country road trip!
+// The distance of the trip, in total, is 1,500 miles.
+// Your car’s fuel efficiency is as follows:
+// At 55 miles per hour, you get 30 miles per gallon.
+// At 60 miles per hour, you get 28 miles per gallon.
+// At 75 miles per hour, you get 23 miles per gallon.
+
+// You have a fuel budget of $175.
+// The average cost of fuel is $3 per gallon.
+
+// Set up a program to answer the following questions:
+// How many gallons of fuel will you need for the entire trip?
+// Will your budget be enough to cover the fuel expense?
+// How long will the trip take, in hours?
+console.log('Part Two ----------- ');
+
+let totalDis = 1500;
+let mph55 = 30;
+let mph60 = 28;
+let mph75 = 23;
+let costOfGas = 3
+
+let totalGallon55mph = (totalDis / mph55);
+console.log(totalGallon55mph);
+// 50 gallons of fuel for 55MPH
+
+let totalGallon60mph = (totalDis / mph60);
+console.log(totalGallon60mph);
+// 53.57 gallons of fuel for 60MPH
+
+let totalGallon75mph = (totalDis / mph75);
+console.log(totalGallon75mph);
+// 65.21 gallons of fuel for 75MPH
+
+let Budget55 = (totalGallon55mph * costOfGas);
+console.log(Budget55);
+// Cost $150 at 55MPH *AFFORDABLE*
