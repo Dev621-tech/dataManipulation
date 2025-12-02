@@ -125,3 +125,17 @@ console.log(Budget60);
 let Budget75 = (totalGallon75mph * costOfGas);
 console.log(Budget75);
 // Cost $195.65 at 75MPH *CANNOT AFFORD*
+
+let timeInHours55 = (totalDis / 55);
+console.log(timeInHours55);
+// about 27.2 Hours at 55MPH
+
+let timeInHours60 = (totalDis / 60);
+console.log(timeInHours60);
+// about 25 Hours at 60MPH
+
+let timeInHours75 = (totalDis / 75);
+console.log(timeInHours75);
+//aboout 20 Hours at 75MPH
+
+//Part Two Done
