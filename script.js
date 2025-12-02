@@ -117,3 +117,11 @@ console.log(totalGallon75mph);
 let Budget55 = (totalGallon55mph * costOfGas);
 console.log(Budget55);
 // Cost $150 at 55MPH *AFFORDABLE*
+
+let Budget60 = (totalGallon60mph * costOfGas);
+console.log(Budget60);
+// Cost $160.71 at 60MPH *AFFORDABLE*
+
+let Budget75 = (totalGallon75mph * costOfGas);
+console.log(Budget75);
+// Cost $195.65 at 75MPH *CANNOT AFFORD*
